@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <h2><center>Contact Us</center></h2>
+
+        <!--
+        The list of Reason options must be:
+            Select a Reason
+            Software Support
+            Hardware Support
+            Information Request
+        -->
+        <form action="index.html" method="POST">
+            <table cellspacing ="10">
+                <tr>
+                    <td align="right">First Name:</td>
+                    <td align="left"><input type="text" name="firstName"/></td>
+                </tr>
+                <tr>
+                    <td align="right">Last Name:</td>
+                    <td align="left"><input type="text" name="lastName"/></td>
+                </tr>
+                <tr>
+                    <td align="right">Email:</td>
+                    <td align="left"><input type="text" name="email"/></td>
+                </tr>
+                <tr>
+                    <td align="right">Type of License:</td>
+                    <td align="left">
+                        <input type="radio" name="licence" value="Business" checked/>Business
+                        <input type="radio" name="licence" value="Personal" unchecked/>Personal
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Reason:</td>
+                    <td align="left"><select name="reason">
+                        <option value="select">Select a Reason</option>
+                        <option value="software">Software Support</option>
+                        <option value="hardware">Hardware Support</option>
+                        <option value="info">Information Request</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Additional Information:</td>
+                    <td align="left"><textarea name="addInfo" cols="21" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="right"></td>
+                    <td align="left"><input type="checkbox" name="readToS" value="Read-ToS" unchecked/>I have read the terms of service.</td>
+                </tr>
+                <tr>
+                    <td align="right"></td>
+                    <td align="center"><input type="submit" value="Send Request"/></td>
+                </tr>
+                <br/>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
