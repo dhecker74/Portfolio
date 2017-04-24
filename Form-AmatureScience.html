@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forms - Amateur Science</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <h1>Submit an Amateur Scientific Paper!</h1>
+
+        <!--
+        Use an HTML form and inputs to build a user interface that allows
+        anyone to submit a scientific paper.
+
+        Required:
+        1. One and only one HTML form
+        2. An HTML text input for the paper's title,
+            Be sure to include the "name" attribute on your input.
+        3. 3 radio inputs to specify the paper's target audience,
+            Valid values are:          
+                Layperson
+                Professional
+                Expert           
+            Radio inputs should have the same name.
+        4. 2 checkbox inputs:
+                The first indicates if the paper has been peer reviewed.
+                The second indicates if the author is open to feedback. 
+                    It should be checked by default.
+            Checkbox inputs should have different names and values.
+        5. A submit input
+        6. A reset input
+        -->
+        <form action="index.html" method="POST">
+            Paper's Title: <input type="text" name="title" /><br/>
+            <br/>
+            Target Audience:<br/>
+            <input type="radio" name="audience" value="Layperson" checked/>Layperson<br/>
+            <input type="radio" name="audience" value="Professional"/>Professional<br/>
+            <input type="radio" name="audience" value="Expert"/>Expert<br/>
+            <br/>
+            Check all that apply:<br/>
+            <input type="checkbox" name="peerReviewed"    value="Reviewed" unchecked/>Paper has been peer reviewed<br/>
+            <input type="checkbox" name="desiresFeedback" value="Feedback" checked/>Author is open to feedback<br/>
+            <br/>
+            <input type="submit"/> <input type="reset"/><br/><br/>
+        </form>
+    </div>
+</body>
+
+</html>
