@@ -2,61 +2,104 @@
 <html lang="en">
 
 <head>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        td {
+            text-align: center;
+            vertical-align: top;
+        }
+
+        p.dishName {
+            font-family: Georgia;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        div.ingredients {
+            font-family: 'Trebuchet MS';
+            font-size: 1em;
+        }
+
+        p.price {
+            font-family: Verdana;
+            font-weight: bold;
+            font-size: .8em;
+        }
+
+    </style>
+
     <title>Cove Cafe Menu</title>
+
 </head>
 
-<body style="font-family:'Comic Sans MS'">
+<body>
     <div class="content">
 
-        <h1><center>Cove Cafe</center></h1>
-        <hr>
-        <a href="home.html">Home</a>&nbsp&nbsp&nbsp&nbsp
-        <a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp
-        <a href="contact.html">Contact Us</a>
-        <hr>
+        <header>
+            <h1>Cove Cafe</h1>
+            <hr>
+            <a href="home.html">Home</a>&nbsp&nbsp&nbsp&nbsp
+            <a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp
+            <a href="contact.html">Contact Us</a>
+            <hr>
+        </header>
 
         <table cellspacing="20" cellpadding="20" width="100%">
             <tr>
-                <td style="text-align:center">
-                    <strong><font size="4">Smoked Salmon Plate</font></strong><br/><br/>
-                    Smoked Salmon, Dill Cream Cheese, Tomatoes, Capers, Red Onion, Your Choice of: Sesame, Plain or Everything Bagel<br/>
-                    <b>$17.95</b>
+                <td>
+                    <p class="dishName">Smoked Salmon Plate</p>
+                    <div class="ingredients">
+                    Smoked Salmon, Dill Cream Cheese, Tomatoes, Capers, Red Onion, Choice of: Sesame, Plain or Everything Bagel
+                    <p class="price">$17.95</p>
+                    </div>
                 </td>
-                <td style="text-align:center">
-                    <strong><font size="4">Fresh Berry Parfait</font></strong><br/><br/>
-                    House-Made Granola, Seasonal Berries, Vanilla Greek Yogurt, ocal Organic Honey<br/>
-                    <b>$10.95</b>
+                <td>
+                    <p class="dishName">Fresh Berry Parfait</p>
+                    <div class="ingredients">
+                    House-Made Granola, Seasonal Berries, Vanilla Greek Yogurt, ocal Organic Honey
+                    </div>
+                    <p class="price">$10.95</p>
                 </td>
-                <td style="text-align:center">
-                    <strong><font size="4">Traditional Benedict</font></strong><br/><br/>
-                    Canadian Bacon, Sliced Tomatio, Poached Eggs, English Muffin, Hollandaise. Choice of Fruit or Potatoes.<br/>
-                    <b>$13.25</b>
+                <td>
+                    <p class="dishName">Traditional Benedict</p>
+                    <div class="ingredients">
+                    Canadian Bacon, Sliced Tomatio, Poached Eggs, English Muffin, Hollandaise. Choice of Fruit or Potatoes.
+                    </div>
+                    <p class="price">$13.25</p>
                 </td>
             </tr>
             <tr>
-                <td style="text-align:center">
-                    <strong><font size="4">Braised Lamb Shank</font></strong><br/><br/>
-                    Cannellini Beans, Artichoke Hearts, Roasted Tomato, Spinach, Natural Jus<br/>
-                    <b>$25.95</b>
+                <td>
+                    <p class="dishName">Braised Lamb Shank</p>
+                    <div class="ingredients">
+                    Cannellini Beans, Artichoke Hearts, Roasted Tomato, Spinach, Natural Jus
+                    </div>
+                    <p class="price">$25.95</p>
                 </td>
-                <td style="text-align:center">
-                    <strong><font size="4">Cove Cafe Cioppino</font></strong><br/><br/>
+                <td>
+                    <p class="dishName">Cove Cafe Cioppino</p>
+                    <div class="ingredients">
                     Shrimp, Fresh Fish, Shellfish, Roasted Potatoes, Tomato-Saffron Broth, Grilled Baguette with Chile Creme Fraiche<br/>
-                    A Local Favorite!<br/>
-                    <b>$24.95</b>
+                    A Local Favorite!
+                    </div>
+                    <p class="price">$24.95</p>
                 </td>
-                <td style="text-align:center">
-                    <strong><font size="4">California Lobster Roll</font></strong><br/><br/>
+                <td>
+                    <p class="dishName">California Lobster Roll</p>
+                    <div class="ingredients">
                     Maine Lobster Claw &amp Knuckle, Bread - Cie Brioche, Avocado, Bibb Lettuce, Lemon &amp Tarragon Aioli<br/>
-                    &quotOur Version of New England Classic&quot<br/>
-                    <b>$22.50</b>
+                    &quotOur Version of New England Classic&quot
+                    </div>
+                    <p class="price">$22.50</p>
                 </td>
             </tr>
         </table>
 
-        <footer style="position:fixed; bottom:0; width:100%">
+        <footer>
             <hr>
-            <h4 style="text-align:center">
+            <h4>
                 123 Easy Street, Mountain View, CA, 94043<br/>
                 (650) 903-1234
             </h4>

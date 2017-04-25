@@ -1,0 +1,14 @@
+header {
+    font-family:'Comic Sans MS'
+}
+footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    font-family:'Comic Sans MS';
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}

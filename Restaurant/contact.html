@@ -2,36 +2,59 @@
 <html lang="en">
 
 <head>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+    <style>
+
+        td.label {
+            text-align: right;
+            font-family: Tahoma;
+        }
+
+        td.input {
+            text-align: left;
+            font-family: 'Comic Sans MS';
+        }
+
+        #reasonDropdown {
+            width: 244px;
+        }
+
+    </style>
+
     <title>Contact Cove Cafe</title>
+
 </head>
 
-<body style="font-family:'Comic Sans MS'">
+<body>
     <div class="content">
 
-        <h1><center>Cove Cafe</center></h1>
-        <hr>
-        <a href="home.html">Home</a>&nbsp&nbsp&nbsp&nbsp
-        <a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp
-        <a href="contact.html">Contact Us</a>
-        <hr>
+        <header>
+            <h1>Cove Cafe</h1>
+            <hr>
+            <a href="home.html">Home</a>&nbsp&nbsp&nbsp&nbsp
+            <a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp
+            <a href="contact.html">Contact Us</a>
+            <hr>
+        </header>
 
         <form action="thankyou.html" method="POST">
             <table cellspacing ="10">
                 <tr>
-                    <td align="right">Name:</td>
-                    <td align="left"><input type="text" name="name"/></td>
+                    <td class="label">Name:</td>
+                    <td class="input"><input type="text" name="name" size="30"/></td>
                 </tr>
                 <tr>
-                    <td align="right">Email:</td>
-                    <td align="left"><input type="text" name="email"/></td>
+                    <td class="label">Email:</td>
+                    <td class="input"><input type="text" name="email" size="30"/></td>
                 </tr>
                 <tr>
-                    <td align="right">Phone:</td>
-                    <td align="left"><input type="text" name="phone"/></td>
+                    <td class="label">Phone:</td>
+                    <td class="input"><input type="text" name="phone" size="30"/></td>
                 </tr>
                 <tr>
-                    <td align="right">Reason for Inquiry:</td>
-                    <td align="left"><select name="reason" style="font-family:'Comic Sans MS'">
+                    <td class="label">Reason for Inquiry:</td>
+                    <td class="input"><select id="reasonDropdown" name="reason" style="font-family:'Comic Sans MS'">
                         <option value="catering">Catering</option>
                         <option value="party">Private Party</option>
                         <option value="feedback">Feedback</option>
@@ -39,19 +62,19 @@
                     </td>
                 </tr>
                 <tr>
-                    <td align="right" valign="top">Additional Information:</td>
-                    <td align="left"><textarea name="addInfo" cols="21" rows="5"></textarea></td>
+                    <td class="label" valign="top">Additional Information:</td>
+                    <td class="input"><textarea name="addInfo" cols="32" rows="8"></textarea></td>
                 </tr>
                 <tr>
-                    <td align="right">Have you been to the restaurant?:</td>
-                    <td align="left">
+                    <td class="label">Have you been to the restaurant?:</td>
+                    <td class="input">
                         <input type="radio" name="newCustomer" value="No" checked/>No
                         <input type="radio" name="newCustomer" value="Yes" unchecked/>Yes
                     </td>
                 </tr>
                 <tr>
-                    <td align="right">Best days to contact you:</td>
-                    <td align="left">
+                    <td class="label">Best days to contact you:</td>
+                    <td class="input">
                         <input type="checkbox" name="monday" value="mon" unchecked/>M
                         <input type="checkbox" name="tuesday" value="tue" unchecked/>T
                         <input type="checkbox" name="wednesday" value="wed" unchecked/>W
@@ -60,16 +83,16 @@
                     </td>
                 </tr>
                 <tr>
-                    <td align="right"></td>
+                    <td class="label"></td>
                     <td align="right"><input type="submit" value="Send Request"/></td>
                 </tr>
                 <br/>
             </table>
         </form>
 
-        <footer style="position:fixed; bottom:0; width:100%">
+        <footer>
             <hr>
-            <h4 style="text-align:center">
+            <h4>
                 123 Easy Street, Mountain View, CA, 94043<br/>
                 (650) 903-1234
             </h4>

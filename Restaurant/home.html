@@ -2,20 +2,38 @@
 <html lang="en">
 
 <head>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        div.description {
+            text-align: center;
+            font-family: Verdana;
+            font-style: italic;
+            max-width: 400px;
+            word-wrap: break-word;
+            margin: auto;
+        }
+
+
+    </style>
+
     <title>Cove Cafe Home</title>
 </head>
 
-<body style="font-family:'Comic Sans MS'">
+<body>
     <div class="content">
 
-        <h1><center>Cove Cafe</center></h1>
-        <hr>
-        <a href="home.html">Home</a>&nbsp&nbsp&nbsp&nbsp
-        <a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp
-        <a href="contact.html">Contact Us</a>
-        <hr><br/>
+        <header>
+            <h1>Cove Cafe</h1>
+            <hr>
+            <a href="home.html">Home</a>&nbsp&nbsp&nbsp&nbsp
+            <a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp
+            <a href="contact.html">Contact Us</a>
+            <hr>
+        </header>
+        <br/>
 
-        <div style="text-align:center; font-family:'Comic Sans MS'; max-width:400px; word-wrap:break-word; margin:auto">
+        <div class="description">
             <img src="../images/CoveCafe.png" alt="Cove Cafe Ocean View" height="150px" width="400px" align="middle"/>
             <p>
                 Cove Cafe is housed in one of Mountain View's original beach cottages. Our seaside location offers 
@@ -29,9 +47,9 @@
             </p>
         </div>
 
-        <footer style="position:fixed; bottom:0; width:100%">
+        <footer>
             <hr>
-            <h4 style="text-align:center">
+            <h4>
                 123 Easy Street, Mountain View, CA, 94043<br/>
                 (650) 903-1234
             </h4>
