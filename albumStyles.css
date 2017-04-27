@@ -1,3 +1,10 @@
-body {
-    background-color: lightpink
+div.background {
+    background-image: url("images/SeattleSymphony.png");
+    background-position: center;
+}
+
+div.transbox {
+    margin: 0;
+    background-color: #ffffff;
+    opacity: 0.9;
 }

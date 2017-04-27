@@ -8,35 +8,57 @@
         div.artists {
             font-style:italic;
         }
-        div.songs {
-            color:blueviolet;
-            font-family: Verdana;
+
+        div.brandi {
+            text-align: center;
         }
+
+        table.albumSongs {
+            color:darkblue;
+            font-family: Verdana;
+            width: 90%;
+            text-align: center;
+            border: 1px solid black;
+            border-spacing: 0;
+            margin: auto;
+        }
+
+        table.albumSongs th, table.albumSongs td {
+            border: 1px solid black;
+        }
+
     </style>
 
         <title>Brandi Carlile - Benaroya Hall</title>
     </head>
     
     <body>
+    <div class="background">
+    <div class="transbox">
+        <div class="albumCover" style="text-align:center;">
+            <img src="images/Brandi Carlile - Album Cover 1.png" /><br/>
+        </div>
+
         <div class="brandi">
-            <h1 align="center">
-                <img src="images\Brandi Carlile - Album Cover 1.png" /><br/>
-                <text style="font-weight:bold; font-family: Tahoma;">Live at Benaroya Hall with the Seattle Symphony</text>
+            <h1>
+                <text style="font-weight:bold; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                    Live at Benaroya Hall<br/><small>with the Seattle Symphony</small>
+                </text>
             </h1>
-            <h2 align="center">
+            <h2>
                 <a href="http://www.brandicarlile.com/">Brandi Carlile</a>
             </h2>
-            <h3 align="center">
+            <h3>
                 May 3, 2011
             </h3>
             <hr>
-            <h2 align="center">
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;">
                 Band Members and Producers
             </h2>
         </div>
 
         <div class="artists producers">
-            <ul>
+            <ul style="margin:2em">
                 <li>Jennifer Bai - violin</li>
                 <li>Mariel Bailey - violin</li>
                 <li>Theresa Benshoof - cello</li>
@@ -90,7 +112,7 @@
         </div>
 
         <div class="songs">
-            <table width="100%" align="center" border="1" cellspacing="0" cellpadding="3">
+            <table class="albumSongs">
                 <tr style="font-weight: bold; background: lightgrey;">
                     <th>Track #</th>
                     <th>Track Title</th>
@@ -158,5 +180,7 @@
                 </tr>
             </table>
         </div>
+    </div>
+    </div>
     </body>
 </html>
