@@ -1,16 +1,34 @@
-header {
-    font-family:'Comic Sans MS'
-}
-footer {
-    position:fixed;
-    bottom:0;
-    width:100%;
-    font-family:'Comic Sans MS';
-    text-align: center;
-}
-
 h1 {
     text-align: center;
     font-family: 'Pacifico', cursive;
     font-size: 50px;
+}
+
+a {
+    font-family:'Comic Sans MS';
+}
+
+a:link {
+    color: goldenrod;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:active {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+    font-family:'Comic Sans MS';
+    text-align: center;
 }

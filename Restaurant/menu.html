@@ -2,12 +2,23 @@
 <html lang="en">
 
 <head>
+    <title>Cove Cafe Menu</title>
+
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 
     <style>
-        td {
+        table.entrees {
+            padding-left: 30px;
+            padding-right: 30px;
+            border-spacing: 30px;
+            width: 100%;
+        }
+
+        td.entrees {
+            padding-left: 30px;
+            padding-right: 30px;
             text-align: center;
             vertical-align: top;
         }
@@ -19,7 +30,7 @@
             font-size: 1.3em;
         }
 
-        div.ingredients {
+        .ingredients {
             font-family: 'Trebuchet MS';
             font-size: 1em;
         }
@@ -35,9 +46,27 @@
             background-size: 100%;
         }
 
-    </style>
+        table.beverages {
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th.bevItem {
+            text-decoration: underline;
+        }
+        td.bevItem, th.bevItem {
+            text-align: left;
+            column-width: 300px;
+        }
+        td.bevPrice {
+            text-align: right;
+        }
+        tfoot.beverages {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
 
-    <title>Cove Cafe Menu</title>
+    </style>
 
 </head>
 
@@ -54,23 +83,24 @@
         </header>
 
         <div class="menu">
-        <table cellspacing="20" cellpadding="20" width="100%">
+        <!-- Entree table -->
+        <table class="entrees"><!-- cellspacing="20" cellpadding="20" width="100%"-->
             <tr>
-                <td>
+                <td class="entrees">
                     <p class="dishName">Smoked Salmon Plate</p>
                     <div class="ingredients">
                     Smoked Salmon, Dill Cream Cheese, Tomatoes, Capers, Red Onion, Choice of: Sesame, Plain or Everything Bagel
                     <p class="price">$17.95</p>
                     </div>
                 </td>
-                <td>
+                <td class="entrees">
                     <p class="dishName">Fresh Berry Parfait</p>
                     <div class="ingredients">
                     House-Made Granola, Seasonal Berries, Vanilla Greek Yogurt, Local Organic Honey
                     </div>
                     <p class="price">$10.95</p>
                 </td>
-                <td>
+                <td class="entrees">
                     <p class="dishName">Traditional Benedict</p>
                     <div class="ingredients">
                     Canadian Bacon, Sliced Tomatio, Poached Eggs, English Muffin, Hollandaise. Choice of Fruit or Potatoes.
@@ -79,14 +109,14 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="entrees">
                     <p class="dishName">Braised Lamb Shank</p>
                     <div class="ingredients">
                     Cannellini Beans, Artichoke Hearts, Roasted Tomato, Spinach, Natural Jus
                     </div>
                     <p class="price">$25.95</p>
                 </td>
-                <td>
+                <td class="entrees">
                     <p class="dishName">Cove Cafe Cioppino</p>
                     <div class="ingredients">
                     Shrimp, Fresh Fish, Shellfish, Roasted Potatoes, Tomato-Saffron Broth, Grilled Baguette with Chile Creme Fraiche<br/>
@@ -94,7 +124,7 @@
                     </div>
                     <p class="price">$24.95</p>
                 </td>
-                <td>
+                <td class="entrees">
                     <p class="dishName">California Lobster Roll</p>
                     <div class="ingredients">
                     Maine Lobster Claw &amp Knuckle, Bread - Cie Brioche, Avocado, Bibb Lettuce, Lemon &amp Tarragon Aioli<br/>
@@ -104,7 +134,41 @@
                 </td>
             </tr>
         </table>
-        </div>
+
+        <!-- Beverages table -->
+        <table class="beverages">
+            <thead class="beverages">
+                <tr>
+                    <th class="bevItem">Beverages</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="beverages">
+                <tr>
+                    <td class="bevItem">Root Beer</td>
+                    <td class="bevPrice">$3.00</td>
+                </tr>
+                <tr>
+                    <td class="bevItem">Bottled Water</td>
+                    <td class="bevPrice">$1.25</td>
+                </tr>
+                <tr>
+                    <td class="bevItem">Lemonade</td>
+                    <td class="bevPrice">$1.00</td>
+                </tr>
+                <tr>
+                    <td class="bevItem">Iced Tea</td>
+                    <td class="bevPrice">$1.25</td>
+                </tr>
+            </tbody>
+            <tfoot class="beverages">
+                <tr>
+                    <td colspan="2">Free refills on beverages with entree</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        </div> <!-- End of menu -->
 
         <footer>
             <hr>
