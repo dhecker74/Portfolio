@@ -2,6 +2,13 @@
 <html lang="en">
     <head>
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    
     <link href="albumStyles.css" rel="stylesheet" type="text/css" />
 
     <style>
@@ -28,6 +35,7 @@
             font-weight: bold;
             background: lightgrey;
             border: 1px solid black;
+            text-align: center;
         }
 
         tbody, td {
@@ -55,7 +63,7 @@
     <div class="background">
     <div class="transbox">
         <div class="albumCover" style="text-align:center;">
-            <img src="images/Brandi Carlile - Album Cover 1.png" /><br/>
+            <img class="img-circle" src="images/Brandi Carlile - Album Cover 1.png" /><br/>
         </div>
 
         <div class="brandi">
@@ -131,7 +139,7 @@
         </div>
 
         <div class="songs">
-            <table class="albumSongs">
+            <table class="albumSongs table-responsive">
             <thead>
                 <tr>
                     <th>Track #</th>
