@@ -2,7 +2,17 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>Contact Cove Cafe</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
@@ -10,10 +20,19 @@
 
     <style>
 
-        td.label {
+        .checkbox {
+            display: inline-block;
+        }
+
+        .inlineRadioLabel {
+            display: inline-block;
+        }
+
+        label {
             text-align: right;
-            font-family: Tahoma;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
             font-weight: bold;
+            color: black;
         }
 
         td.input {
@@ -35,60 +54,87 @@
         <header>
             <h1>Cove Cafe</h1>
             <hr>
-            <a href="home.html">Home</a>&nbsp&nbsp&nbsp&nbsp
-            <a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp
-            <a href="contact.html">Contact Us</a>
-            <hr>
+            <ul class="nav nav-tabs">
+                <li><a href="home.html"><i class="glyphicon glyphicon-home"></i></a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
         </header>
+        <br/>
 
         <form action="thankyou.html" method="POST">
-            <table cellspacing ="10">
-                <tr>
-                    <td class="label">Name:</td>
-                    <td class="input"><input type="text" name="name" size="30"/></td>
-                </tr>
-                <tr>
-                    <td class="label">Email:</td>
-                    <td class="input"><input type="text" name="email" size="30"/></td>
-                </tr>
-                <tr>
-                    <td class="label">Phone:</td>
-                    <td class="input"><input type="text" name="phone" size="30"/></td>
-                </tr>
-                <tr>
-                    <td class="label">Reason for Inquiry:</td>
-                    <td class="input"><select id="reasonDropdown" name="reason" style="font-family:'Comic Sans MS'">
-                        <option value="catering">Catering</option>
-                        <option value="party">Private Party</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="other">Other</option>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label" valign="top">Additional Information:</td>
-                    <td class="input"><textarea name="addInfo" cols="32" rows="8"></textarea></td>
-                </tr>
-                <tr>
-                    <td class="label">Have you been to the restaurant?:</td>
-                    <td class="input">
-                        <input type="radio" name="newCustomer" value="No" checked/>No
-                        <input type="radio" name="newCustomer" value="Yes" unchecked/>Yes
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label">Best days to contact you:</td>
-                    <td class="input">
-                        <input type="checkbox" name="monday" value="mon" unchecked/>M
-                        <input type="checkbox" name="tuesday" value="tue" unchecked/>T
-                        <input type="checkbox" name="wednesday" value="wed" unchecked/>W
-                        <input type="checkbox" name="thursday" value="thur" unchecked/>Th
-                        <input type="checkbox" name="friday" value="fri" unchecked/>F
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label"></td>
-                    <td align="right"><input type="submit" value="Send Request"/></td>
-                </tr>
+            <div class="container">
+                <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="name" size="30">
+                </div>
+                <div class="form-group">
+                    <lable for="usr">Email:</lable>
+                    <input type="text" class="form-control" id="email" size="30">
+                </div>
+                <div class="form-group">
+                    <lable for="usr">Phone:</lable>
+                    <input type="text" class="form-control" id="phone" size="30">
+                </div>
+                
+                <div class="dropdown">   <!-- NOTE: Dropdown needs jquery.min.js -->
+                    <lable for="usr">Reason for Inquiry:</lable>
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Select Option<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" id="cat" value="Catering">Catering</a></li>
+                        <li><a href="#" id="pri" value="Private Party">Private Party</a></li>
+                        <li><a href="#" id="fee" value="Feedback">Feedback</a></li>
+                        <li><a href="#" id="oth" value="Other">Other</a></li>
+                    </ul>
+                </div>
+<!-- Need dropdowns-enhancement.min.js to work I think???
+          <div class="form-inline">
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Option1 <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li>
+                  <input type="radio" id="ex1_1" name="ex1" value="1" checked>
+                  <label for="ex1_1">Option1</label>
+                </li>
+                <li>
+                  <input type="radio" id="ex1_2" name="ex1" value="2">
+                  <label for="ex1_2">Option2</label>
+                </li>
+                <li>
+                  <input type="radio" id="ex1_3" name="ex1" value="3">
+                  <label for="ex1_3">Option3</label>
+                </li>
+                <li>
+                  <input type="radio" id="ex1_4" name="ex1" value="4" disabled>
+                  <label for="ex1_4">I'm disabled</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+-->
+   
+                <div class="form-group">
+                    <lable for="usr">Additional Information:</lable>
+                    <textarea class="form-control" rows="8" id="addInfo"></textarea>
+                </div>
+                <div class="radio">
+                    <p class="inlineRadioLabel">Have you been to the restaurant?:&nbsp</p>
+                    <label><input type="radio" name="newCustomer" checked>No</label>
+                    <label><input type="radio" name="newCustomer">Yes</label>
+                </div>
+                <div class="checkbox">
+                    <lable for="usr">Best days to contact you:</lable>
+                    <label><input type="checkbox" value="">M</label>
+                    <label><input type="checkbox" value="">T</label>
+                    <label><input type="checkbox" value="">W</label>
+                    <label><input type="checkbox" value="">Th</label>
+                    <label><input type="checkbox" value="">F</label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-info" value="Send Request">
+                </div>
                 <br/>
             </table>
         </form>
@@ -102,6 +148,15 @@
         </footer>
 
     </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <!-- DON'T HAVE THIS??? <script src="../bootstrap-3.3.7-dist/js/dropdowns-enhancement.min.js"></script> -->
+
+
 </body>
 
 </html>

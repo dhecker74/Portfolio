@@ -2,7 +2,17 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>Cove Cafe Home</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
@@ -17,6 +27,7 @@
             word-wrap: break-word;
             margin: auto;
         }
+
     </style>
 
 </head>
@@ -24,13 +35,20 @@
 <body>
     <div class="content">
 
+    <div class="container">
+        <div class="jumbotron">
+            <h2>New Location!</h2>
+        </div>
+    </div>
+
         <header>
             <h1>Cove Cafe</h1>
             <hr>
-            <a href="home.html">Home</a>&nbsp&nbsp&nbsp&nbsp
-            <a href="menu.html">Menu</a>&nbsp&nbsp&nbsp&nbsp
-            <a href="contact.html">Contact Us</a>
-            <hr>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="home.html"><i class="glyphicon glyphicon-home"></i></a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </header>
         <br/>
 
@@ -56,6 +74,12 @@
             </h4>
         </footer>
     </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
