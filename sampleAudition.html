@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- My JavaScript for this HTML -->
+    <script type="text/JavaScript" src="JavaScript/sampleAudition.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>Sample Audition</h1>
+    <form name="displayEvens" onsubmit="return validateItems();" onreset="resetForm();" class="form-horizontal">
+        <div class="form-group">
+            <label for="startNum" class="col-sm-2 control-label text-right">Starting Number</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" id="startNum">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="startNum" class="col-sm-2 control-label text-right">Ending Number</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" id="endNum">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label text-right" for="startNum">Step</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" id="step" min="0">
+            </div>
+        </div>
+        <div class="col-sm-offset-2 col-sm-2">
+            <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
+            <!-- <button type="reset" id="resetButton" class="btn">Reset</button> -->
+        </div>
+    </form>
+    <table id="results" class="table table-striped" style="display:none;">
+        <thead>
+            <tr>
+                <th>Here are the even numbers between</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Addition (+)</td>
+                <td><span id="addResult"></span></td>
+            </tr>
+            <tr>
+                <td>Subtraction (-)</td>
+                <td><span id="subtractResult"></span></td>
+            </tr>
+            <tr>
+                <td>Multiplication (*)</td>
+                <td><span id="multiplyResult"></span></td>
+            </tr>
+            <tr>
+                <td>Division (/)</td>
+                <td><span id="divideResult"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
